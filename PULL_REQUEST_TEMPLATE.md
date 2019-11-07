@@ -9,3 +9,5 @@ Clear explanation of problem and solution
 Illustrative examples
 Incomplete spec edits
 Identification of potential concerns, challenges, and drawbacks
+
+example: https://github.com/thephpleague/skeleton/blob/master/PULL_REQUEST_TEMPLATE.md
