@@ -11,12 +11,12 @@ Phava is a PHP style framework initially developed as a coding practise for buil
 
 Phava makes for less error-prone code that is easy to maintain. It has objects for everything:
 
-// Andre shared such an example. Is there a code way to say it?
-e.g. out 1 into a variable `Number is 1`. What we do is `1 is number object`.
+<!-- Andre shared such an example. Is there a code way to say it?
+e.g. out 1 into a variable `Number is 1`. What we do is `1 is number object`. -->
 
 **What Phava has from PHP:**
 
-* the base // how can I say this more correctly/precisely? :)
+* the base <!-- how can I say this more correctly/precisely? :) -->
 * setup;
 * no compiling;
 * works with every deployment system that supports PHP;
@@ -36,33 +36,37 @@ Phava makes it possible to create robust, durable architectures that are easy to
 * will be worked on by many developers;
 * you will not throw away in a couple of years.
 
-Phava will slow you down in the very beginning, but you’ll have a robust system in just two weeks.
+Phava will slow you down in the very beginning, but you’ll have a robust system in just two weeks. 👯
 
-## ð  Phava coding conventions / commandments
+## Phava coding commandments <!-- does this sound better than conventions? -->
 The good coding practice of Phava is ensured by conforming to the following conventions applied to PHP as the base.
 
-1. ð **Make sure your code is readable**
+1. **Make sure your code is readable** :x:🔮
 
-  This may sound silly, but it is very important. Method names, variable names, etc.: it should be in-your-face obvious what they do/what they are here for. No abbreviations, and explicitness over shorter names.
+The names of methods, variable, and <!-- please add at least one more example --> must clearly speak of their purpose. It must be in-your-face obvious what they do and what they are there for. Do not use any abbreviations. Choose explicitness over shorter names.
 
-2. âï¸ **Stick to the naming conventions**
+<!-- can you please add an example? :)? -->
 
-  All classes are named Big-to-Small.
-  Let's illustrate this by means of an example;
+2. **Stick to the naming conventions** 
 
+  All classes must be named Big-to-Small. Larger, encompasing classes come first. Smaller, distinct classes follow.
+
+e.g.
   ```php
   class MonetaryAccount {};
   class MonetaryAccountBank {};
   class MonetaryAccountSavings {};
   ```
 
-  The more specific parts are in the last part of a classes name. Other examples would be `TabItem` and `TabResultInquiry`, you see how they get more specific towards the end of the name?
+The more specific parts must be placed in the last part of the class name. 
 
-3. ð¥ **Test all branches, throw Exceptions when things are exceptional**
+e.g.`TabItem` and `TabResultInquiry`: classes get more specific towards the end of the name.
+
+3. **Test all branches and throw Exceptions when things are exceptional**
   <!-- Very bad example, I need a better one -->
-  Make sure all your branches of conditionals are checked upon.
-  Take the following example.
-
+  You must check all your conditional branches.
+ 
+ e.g.
   ```php
   if ($user->getBalance()->isGreaterThan(10)) {
     return 'You can buy something!';
@@ -71,11 +75,9 @@ The good coding practice of Phava is ensured by conforming to the following conv
   }
   ```
 
-  The case where the users balance is exactly 10 is not covered now.
-  This you do not want.
-  Cover _all_ cases.
-  Even if you do not want to do something intentionally.
-  Then write it as:
+The case where the user balance is exactly 10 is not covered now. This is not what you want. You must cover _all_ cases, even when you do not want to do something intentionally.
+
+Here is an improved version of the function above:
 
   ```php
   if ($user->getBalance()->isGreaterThan(10)) {
@@ -87,19 +89,21 @@ The good coding practice of Phava is ensured by conforming to the following conv
   }
   ```
 
-  That way it's clear for others _why_ you do nothing now, and that it is actually intentional.
+This way, it's clear for others _why_ you do nothing now, and that it is actually intentional.
 
-4. ð **No public variables in objects**
+4. **Never use public variables in objects**
 
-  Use getters and setters such that values can not be changed unintentionally.
-5. ð¯ **Keep your methods small**
+Use getters and setters such <!-- do yyou mean "so that"? --> that values can not be changed unintentionally.
 
-  Make sure your methods are small, to the point.
-  Do you have more than four arguments?
-  Then your method is most likely too complex.
-  Split it up, or pass an Object instead.
+<!-- can you please add an example? :)? -->
 
-6. ð **No references**
+5. **Keep your methods small** <!-- is "small" an official attribute? -->
+
+All methods must be simple and to the point. If a method have more than four arguments, it is too complex. Split it up, or pass an Object instead.
+
+<!-- can you please add an example? :)? -->
+
+6. **Never use references**
 
   Just don't do it. <!-- Needs explanation -->
   e.g.
@@ -109,9 +113,8 @@ The good coding practice of Phava is ensured by conforming to the following conv
     // Something here.
   }
   ```
+<!-- Needs explanation -->
 
-7. â¨ **Don't use (PHP) magic**
+7. **Never use (PHP) magic** :x:🧙
 
-  Code should always work as the user expects it.
-  Nothing more, nothing less.
-  This might be the most important rule of all actually.
+Code must always work as the user expects. Nothing more, nothing less. This is the most important rule of all.
