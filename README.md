@@ -97,9 +97,13 @@ Use getters and setters such <!-- do yyou mean "so that"? --> that values can no
 
 <!-- can you please add an example? :)? -->
 
-5. **Keep your methods small** <!-- is "small" an official attribute? -->
+**Never use aliases in any other level than the API**
 
-All methods must be simple and to the point. If a method have more than four arguments, it is too complex. Split it up, or pass an Object instead.
+No calls or messages must use aliases to find object IDs with the exception of the calls of the API.
+
+5. **Keep functions small** <!-- is "small" an official attribute? -->
+
+All methods must be simple and to the point. If a method has more than four arguments, it is too complex. Split it up, or pass an Object instead.
 
 <!-- can you please add an example? :)? -->
 
