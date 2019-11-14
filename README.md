@@ -1,6 +1,6 @@
 # Phava Specification
 
-You are looking at Phava, the custom-built PHP framework bunq invented to serve you the best banking experience in the world.
+You are looking at Phava, the custom-built PHP framework [bunq](http://bunq.com/) invented to serve you the best banking experience in the world.
 The framework is designed to be easy to work with, yet, powerful enough to build an API that enables the bunq app (and [external developers](https://github.com/bunq)) to do its magic. 🌈
 
 *This is a beta (0.9) version of the Phava specification.*
