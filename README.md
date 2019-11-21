@@ -1,7 +1,7 @@
 # Phava Specification
 
-You are looking at Phava, the custom-built PHP framework [bunq](http://bunq.com/) invented to serve you the best banking experience in the world.
-The framework is designed to be easy to work with, yet, powerful enough to build an API that enables the bunq app (and [external developers](https://github.com/bunq)) to do its magic. 🌈
+You are looking at Phava, the custom-built PHP framework [bunq](http://bunq.com/) invented to give you the best banking experience in the world.
+The framework is designed to be easy to work with, yet powerful enough to build an API that enables the bunq app (and [external developers](https://github.com/bunq)) to do its magic. 🌈
 
 *This is a beta (0.9) version of the Phava specification.*
 
@@ -11,7 +11,7 @@ Phava is a PHP style framework initially developed as a coding practice for buil
 
 Phava makes for less error-prone code that is easy to maintain. It has objects for everything. 
 
-E.g., imagine you have a string "Luxembourg". From just this value, you can't derive whether it's referring to the city or the country. Hence, within Phava, you would wrap this value in a class that tells you exactly what the value relates to. In this case, it could be either a `City` object or a `Country` object with "Luxembourg" as its value. 
+E.g., imagine you have a string "Luxembourg". From just this value, you can't derive whether it's referring to the city or the country. Hence, within Phava you would wrap this value in a class that tells you exactly what the value relates to. In this case, it could be either a `City` object or a `Country` object with "Luxembourg" as its value. 
 
 **What Phava has from PHP:**
 
@@ -41,9 +41,9 @@ Phava will slow you down in the very beginning, but you’ll have a robust syste
 The good coding practice of Phava is ensured by conforming to the following conventions applied to PHP as the base.
 
 1. **Make sure your code is readable** :x:🔮
-All code constructs, such as methods, variables, and classes, must speak of their purpose. It must be in-your-face obvious what they do and what they are there for. Do not use any abbreviations. Choose explicitness over shorter names.
+All code constructs, such as methods, variables, and classes must speak of their purpose. It must be in-your-face obvious what they do and what they are there for. Do not use any abbreviations. Choose explicitness over shorter names.
 
-E.g., you could use `LIMIT_QUERY` as a name for a constant the value of which is used to limit the number of results you obtain when executing a database query. However, but `LIMIT_NUMBER_OF_PAYMENTS_SHOWN_AT_ONCE` would make a better name because it communicates the intention of the limit more clearly.
+E.g., you could use `LIMIT_QUERY` as a name for a constant the value of which is used to limit the number of results you obtain when executing a database query. However, `LIMIT_NUMBER_OF_PAYMENTS_SHOWN_AT_ONCE` would make a better name because it communicates the intention of the limit more clearly.
 
 2. **Stick to the naming conventions** 
 
