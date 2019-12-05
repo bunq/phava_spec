@@ -128,7 +128,7 @@ Just don't do it. No referencing makes for easy tracking of changes and helps to
 E.g.,
 
   ```php
-  function yoMamma(Model &$model) {
+  function yoMamma(array &$allModel) {
     // Something here.
   }
   ```
